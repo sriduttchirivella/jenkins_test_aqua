@@ -119,6 +119,7 @@
      - The Docker plugin failed to launch new Jenkins build agent containers in first place and was trowing following errors
 
           - ![jenkins_08](https://user-images.githubusercontent.com/76213115/102697740-203a9000-425e-11eb-9c10-94e8cc9865ec.png)
-          - I have debugged this issue and found out that there is a know issue with the docker plugin when used with latest version of Jackson 2 API plugin.
+          - I have debugged this issue and found out that there is a known issue with the docker plugin when used with latest version of Jackson 2 API plugin.
+          - [https://github.com/jenkinsci/docker-plugin/issues/821](https://github.com/jenkinsci/docker-plugin/issues/821)
 
           - Since this is a new Jenkins deployment it automatically deployed latest version (2.12.0) of Jackson 2 API plugin and I had to manually downgraded it to v2.11.3 to fix the issue
